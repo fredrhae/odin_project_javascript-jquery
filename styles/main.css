@@ -1,0 +1,30 @@
+
+/* ############ Style elements from the navbar  ###########*/
+.navbar{
+	width: 100%; height: 60px;
+	position: relative;
+	top:0; left:0;
+}
+
+#header {
+	text-align:center;
+	padding-top: 10px;
+}
+
+/* ############ Style elements from the results with the content  ###########*/
+
+.content{
+	background-color: white;
+	position: relative;
+	top: 0px;
+	width: 100%; height: 75%;
+}
+
+/* ############ Style elements from the footer   ###########*/
+
+.footer{
+	width: 100%; height: 65px;
+	position: relative;
+	top: 80px;
+	background-color: gray;
+}
