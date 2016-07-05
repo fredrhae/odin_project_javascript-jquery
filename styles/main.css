@@ -1,9 +1,10 @@
 
 /* ############ Style elements from the navbar  ###########*/
 .navbar{
-	width: 100%; height: 60px;
+	width: 100%; height: 15%;
 	position: relative;
 	top:0; left:0;
+	clear: both;
 }
 
 #header {
@@ -15,9 +16,26 @@
 
 .content{
 	background-color: white;
+	display: table;
 	position: relative;
-	top: 0px;
+	top: 20px;
 	width: 100%; height: 75%;
+}
+
+.container {
+	width: 50%;
+	margin:0 auto;
+}
+
+.square {
+	margin-left: 1px;
+	margin-top: 1px;
+	border: 1px solid black;
+	float: left
+}
+
+.row {
+	clear: both;
 }
 
 /* ############ Style elements from the footer   ###########*/
