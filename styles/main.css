@@ -1,4 +1,8 @@
 
+p {
+	font-size: 20px;
+}
+
 /* ############ Style elements from the navbar  ###########*/
 .navbar{
 	width: 100%; height: 15%;
@@ -12,13 +16,50 @@
 	padding-top: 10px;
 }
 
+#options {
+	top: 10px;
+	position:relative;
+	text-align: center;
+	clear: both;
+}
+
+#options > p, #options > select {
+	margin-left: 10px;
+	display: inline-block;
+}
+
+#options > select {
+	font-size: 16px;
+}
+
+.mode_option {
+	font-size: 16px;
+}
+
+.button {
+	width: 120px; height: 35px;
+	border-radius: 5px;
+	margin-left: 10px;
+	display: inline-block;
+	background-color: #2ba6cb;
+	border: 1px solid #1e728c;
+	color: white;
+	font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.button:focus {
+  outline: none;  
+}
+
 /* ############ Style elements from the results with the content  ###########*/
 
 .content{
 	background-color: white;
 	display: table;
 	position: relative;
-	top: 20px;
+	top: 30px;
 	width: 100%; height: 75%;
 }
 

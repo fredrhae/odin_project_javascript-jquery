@@ -8,6 +8,7 @@ $(document).ready(function(){
 	createGrid(sizeSquare);
 	
 	setMouseEnterEvent();
+	setButtonEffect();
 
 });
 
@@ -73,4 +74,10 @@ var setMouseEnterEvent = function () {
 			$(this).animate({backgroundColor: "white"}, "fast");
 		}
 	);
+}
+
+var setButtonEffect = function () {
+	$('.button').click(function() {
+		$(this).effect( "highlight", {color: '#2284A1'}, 500 );
+	});
 }
