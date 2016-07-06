@@ -3,17 +3,23 @@ p {
 	font-size: 20px;
 }
 
+h1 {
+	font-family: sans-serif;
+	color: white;
+}
+
 /* ############ Style elements from the navbar  ###########*/
 .navbar{
 	width: 100%; height: 15%;
 	position: relative;
+	background-color: #006bb3;
 	top:0; left:0;
 	clear: both;
 }
 
 #header {
 	text-align:center;
-	padding-top: 10px;
+	padding-top: 30px;
 }
 
 #options {
@@ -37,7 +43,7 @@ p {
 }
 
 .button {
-	width: 120px; height: 35px;
+	width: 110px; height: 35px;
 	border-radius: 5px;
 	margin-left: 10px;
 	display: inline-block;
