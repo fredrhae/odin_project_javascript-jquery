@@ -1,4 +1,3 @@
-
 p {
 	font-size: 20px;
 	font-family: sans-serif;
@@ -10,7 +9,7 @@ h1 {
 }
 
 body {
-	min-width: 900px;
+	min-width: 1200px;
 }
 
 /* ############ Style elements from the navbar  ###########*/
@@ -35,22 +34,28 @@ body {
 
 .content{
 	background-color: white;
-	display: table;
+	display: inline-block;
 	position: relative;
 	top: 30px;
-	width: 100%; height: 75%;
+	width: 80%; height: 75%;
 }
 
 .container {
-	width: 60%;
+	margin-right: 30px;
+	width: 50%;
+	display: inline-block;
+	margin: 30px 10px 30px 150px;
+/* 	width: 50%;
 	margin:30px;
-	float: left;
+	float: left; */
 }
 
 #options {
+	width: 30%;
+	float: right;
 	text-align: left;
 	margin-top: 30px;
-	margin-left: 30px;
+	margin-right: 30px
 }
 
 #options > p {
@@ -97,13 +102,19 @@ body {
 
 /* ############ Style elements from the footer   ###########*/
 
-#footer {
-	font-size: 14px;
-	text-align: center;
+.footer{
+	width: 100%; height: 65px;
+	position: relative;
+	top: 30px;
 	margin-bottom: 20px;
 	clear: both;
 }
 
-#footer > span {
+.footer > p {
+	font-size: 14px;
+	text-align: center;
+}
+
+.footer span {
 	color: rgb(161, 0, 43);
 }
