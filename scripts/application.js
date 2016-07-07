@@ -2,7 +2,11 @@
 $(document).ready(function(){
 	setSelectedModeHandler();
 	createGrid();
-	setButtonEffect();	
+	setButtonEffect();
+	$( window ).resize(function() {
+		removeGrid();
+		createGrid();
+	});
 });
 
 // Classes and objects definitions
@@ -203,7 +207,8 @@ function getRgbValues(color)
 }
 
 function setButtonEffect() {
-	$('.button').click(function() {
+	$('.button').click(function(evt) {
+		evt.preventDefault();
 		$(this).effect( "highlight", {color: '#2284A1'}, 500 );
 	});
 }
@@ -230,9 +235,9 @@ function changeGrid() {
 }
 
 function setSelectedModeHandler() {
-	 $(modeSelectorName).change(function () {
-                selectedMode = $(modeSelectorName + " option:selected").val();
-				removeGrid();
-				createGrid();
-            });
+	$(modeSelectorName).change(function () {
+		selectedMode = $(modeSelectorName + " option:selected").val();
+		removeGrid();
+		createGrid();
+	});
 }

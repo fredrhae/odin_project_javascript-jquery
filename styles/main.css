@@ -1,6 +1,7 @@
 
 p {
 	font-size: 20px;
+	font-family: sans-serif;
 }
 
 h1 {
@@ -8,56 +9,27 @@ h1 {
 	color: white;
 }
 
+body {
+	min-width: 900px;
+}
+
 /* ############ Style elements from the navbar  ###########*/
 .navbar{
-	width: 100%; height: 15%;
+	width: 100%; height: 30%;
 	position: relative;
 	background-color: #006bb3;
-	top:0; left:0;
-	clear: both;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 #header {
-	text-align:center;
-	padding-top: 30px;
-}
-
-#options {
-	top: 10px;
-	position:relative;
 	text-align: center;
-	clear: both;
 }
 
-#options > p, #options > select {
-	margin-left: 10px;
-	display: inline-block;
+#header img {
+	margin-top: -30px;
 }
 
-#options > select {
-	font-size: 16px;
-}
-
-.mode_option {
-	font-size: 16px;
-}
-
-.button {
-	width: 110px; height: 35px;
-	border-radius: 5px;
-	margin-left: 10px;
-	display: inline-block;
-	background-color: #2ba6cb;
-	border: 1px solid #1e728c;
-	color: white;
-	font-size: 14px;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.button:focus {
-  outline: none;  
-}
 
 /* ############ Style elements from the results with the content  ###########*/
 
@@ -70,8 +42,46 @@ h1 {
 }
 
 .container {
-	width: 50%;
-	margin:0 auto;
+	width: 60%;
+	margin:30px;
+	float: left;
+}
+
+#options {
+	text-align: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+#options > p {
+	margin-top: 20px;
+}
+
+#options > select {
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+.mode_option {
+	font-size: 16px;
+}
+
+.button {
+	width: 110px; height: 35px;
+	border-radius: 5px;
+	margin-right: 15px;
+	margin-top: 20px;
+	display: inline-block;
+	background-color: #2ba6cb;
+	border: 1px solid #1e728c;
+	color: white;
+	font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.button:focus {
+  outline: none;  
 }
 
 .square {
@@ -87,9 +97,13 @@ h1 {
 
 /* ############ Style elements from the footer   ###########*/
 
-.footer{
-	width: 100%; height: 65px;
-	position: relative;
-	top: 80px;
-	background-color: gray;
+#footer {
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 20px;
+	clear: both;
+}
+
+#footer > span {
+	color: rgb(161, 0, 43);
 }
